@@ -1,7 +1,7 @@
 .myGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 400px 400px 400px;
   gap: 20px;
   row-gap: 40px;
 }
@@ -12,9 +12,8 @@
 
 .gridItem1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
-
-.gridItem4 {
+.gridItem2 {
   grid-column: span 2;
 }
