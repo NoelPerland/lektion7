@@ -51,7 +51,11 @@ header {
   z-index: 1000;
   margin-right: 20px;
 }
-
+.button1 {
+  font-size: 1rem;
+  padding: 10px 20px;
+  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
 nav {
   font-family: "Arial Narrow", sans-serif;
   font-size: x-large;
@@ -81,7 +85,6 @@ nav a {
   display: grid;
   justify-items: center;
   color: white;
-
   padding-top: 180px;
 }
 
@@ -102,11 +105,6 @@ nav a {
   .hero {
     font-size: large;
     padding-top: 100px;
-  }
-
-  .button1 {
-    font-size: 1rem;
-    padding: 10px 20px;
   }
 }
 .button2 {
