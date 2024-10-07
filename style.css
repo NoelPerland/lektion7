@@ -79,6 +79,58 @@ nav a {
   line-height: 40px;
 }
 
+/* Hide both the links and the burger menu by default */
+.resnav {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Media query for screens 768px and larger (desktop view) */
+@media (min-width: 768px) {
+  .resnav {
+    display: flex;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+}
+
+/* Media query for screens smaller than 768px (mobile view) */
+@media (max-width: 768px) {
+  .resnav {
+    display: none; /* Hide the full menu */
+  }
+
+  .fa-bars {
+    display: block; /* Show the burger menu */
+  }
+
+  /* Optional: Styling for the mobile menu when it opens */
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .nav-active a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+}
 .hero {
   font-family: "Arial Narrow", sans-serif;
   font-size: 250%;
